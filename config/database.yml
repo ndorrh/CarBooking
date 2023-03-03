@@ -23,7 +23,9 @@ default: &default
 
 development:
   <<: *default
-  database: Full_Stack_Capstone_development
+  database: CarBooking_development
+  username: "postgres"
+  password: "FullStackDev@2023"
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -57,7 +59,9 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: Full_Stack_Capstone_test
+  database: CarBooking_test
+  username: "postgres"
+  password: "FullStackDev@2023"
 
 
 # As with config/credentials.yml, you never want to store sensitive information,
