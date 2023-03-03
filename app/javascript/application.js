@@ -3,16 +3,13 @@ import "@hotwired/turbo-rails"
 import "./controllers"
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router } from "react-router-dom";
+import App from "./App";
 
-function App() {
-  return (
-    <div>
-        <h1>Hello World!</h1>
-    </div>
-  );
-}
 
 ReactDOM.render(
-  <App/>,
+  <Router>
+    <App />
+  </Router>,
   document.getElementById('root'),
 );
